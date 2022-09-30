@@ -1,0 +1,143 @@
+* {
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 10vh; 
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+}
+
+nav {
+    position: absolute;
+    right: 15%;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: rgb(182, 182, 182);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(225, 225, 225);
+}
+
+.main1 {
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container {
+    border-bottom: 4px solid rgb(182, 182, 182);
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 0;
+
+}
+
+.name-image {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+
+#about-image {
+    height: 500px;
+    width: 400px;
+}
+
+.biography {
+    color: white;
+    width: 50%;
+
+}
+
+#bio-title {
+    font-size: 60px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.contact-icon {
+    filter: invert(42%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+
+.contact-icon:hover {
+    filter: invert(42%) sepia(100%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+
+.main2 {
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+    align-items: center;
+}
+
+.work-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#work-container-title {
+    color: white;
+    font-size: 36px;
+}
+
+.project-grid {
+    height: 300px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 15% 850%;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px 0 10px;
+    border: 0.5px solid white;
+    border-radius: 10px;
+}
+
+.project-image {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+    margin: 5px 10px 0;
+}
+
+.project-title {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 24px;
+    color: white;
+}
+
+.project-description {
+    grid-column: 2;
+    grid-row: 2;
+    color: white;
+    font-size: 18px;
+}
+
+.github-icon {
+    grid-area: icon;
+}
+
