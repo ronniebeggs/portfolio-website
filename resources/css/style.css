@@ -59,6 +59,11 @@ nav a:hover {
 #about-image {
     height: 400px;
     width: 400px;
+    transition: transform 0.25s 0.25s ease;
+}
+
+#about-image:hover {
+    transform: scale(1.1);
 }
 
 .biography {
@@ -90,7 +95,7 @@ nav a:hover {
 }
 
 .main2 {
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(40, 40, 40);
     height: 100vh;
     width: 100%;
     align-items: center;
@@ -120,6 +125,11 @@ nav a:hover {
     margin: 10px 0 10px;
     border: 0.5px solid white;
     border-radius: 10px;
+    transition: transform 0.25s 0.25s ease;
+}
+
+.project-grid:hover {
+    transform: scale(1.1);
 }
 
 .project-image {
@@ -131,11 +141,10 @@ nav a:hover {
     margin: 5px 10px 0;
 }
 
-.project-title h3 {
+.project-title {
     grid-column: 2;
     grid-row: 1;
-    font-size: 22px;
-    color: rgb(35, 120, 255);
+    font-size: 20px;
 }
 
 .project-title:link {
@@ -143,11 +152,15 @@ nav a:hover {
     text-decoration: none;
 }
 
-.project-tile:hover {
-    text-decoration-line: underline;
-    text-decoration-color: (35, 120, 255);
+.project-title:visited {
+    color: #4285F4;
+    text-decoration: none;
 }
 
+.project-title:hover {
+    color: #4285F4;
+    text-decoration: underline;
+}
 
 .project-description {
     grid-column: 2;
@@ -155,8 +168,3 @@ nav a:hover {
     color: white;
     font-size: 16px;
 }
-
-.github-icon {
-    grid-area: icon;
-}
-
