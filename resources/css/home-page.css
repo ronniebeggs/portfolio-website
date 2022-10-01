@@ -33,7 +33,7 @@ nav a:hover {
 .main1 {
     background-color: rgb(20, 20, 20);
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@ nav a:hover {
 
 .main2 {
     background-color: rgb(40, 40, 40);
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     align-items: center;
 }
